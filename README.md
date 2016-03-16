@@ -76,4 +76,18 @@ To start your Phoenix app:
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
 
+
+---------------------------------------------
+**Pasos siguientes**
+Para los pasos siguientes, crear el CRUD tanto con vistas HTML o creando un API, puedes seguir el [siguiente tutorial][2]
+
+Phoenix te realiza mucho de lo que necesitas, te deja la aplicacion practicamente lista, lo unico que tienes que hacer es ingresas los comandos por consola necesarios para que puedas crear cada clase. Todo se basa en rails, por lo que si tienes experiencia con el comando scaffold, puedes guiarte mucho mas facil aqui.
+
+El comando es:
+
+`mix phoenix.gen.html Clase clase columna:tipo columna:tipo [columna:references:claseforanea]`
+
+Al igual que en rails, creara por defecto la primary key como id.
+
 [1]:http://tecadmin.net/upgrade-nodejs-via-npm/#
+[2]:http://codetunes.com/2015/phoenix-blog/
