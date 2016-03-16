@@ -1,0 +1,28 @@
+<h2>Listing type user</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for typeuser <- @type_user do %>
+    <tr>
+      <td><%= typeuser.name %></td>
+      <td><%= typeuser.description %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: typeuser_path(@conn, :show, typeuser), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: typeuser_path(@conn, :edit, typeuser), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: typeuser_path(@conn, :delete, typeuser), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New typeuser", to: typeuser_path(@conn, :new) %>

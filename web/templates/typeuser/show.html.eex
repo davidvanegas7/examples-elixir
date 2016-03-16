@@ -1,0 +1,18 @@
+<h2>Show typeuser</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @typeuser.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @typeuser.description %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: typeuser_path(@conn, :edit, @typeuser) %>
+<%= link "Back", to: typeuser_path(@conn, :index) %>

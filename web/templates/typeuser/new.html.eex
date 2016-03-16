@@ -1,0 +1,6 @@
+<h2>New typeuser</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: typeuser_path(@conn, :create) %>
+
+<%= link "Back", to: typeuser_path(@conn, :index) %>
